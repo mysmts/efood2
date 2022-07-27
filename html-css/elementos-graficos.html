@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Material de Apoio do Módulo M7/maysa-exercicio-modulo-07e08/graficos.css">
+    <title>Document</title>
+
+
+    <h1>Elementos Gráficos</h1>
+    <div id="grafico-01">
+        <img src="./coffe.jpg"
+        alt="coffe">
+    
+    
+    </div>
+    <div id="grafico-02">
+
+    </div>
+
+
+    <div>
+    <canvas id="canvas"></canvas>
+    </div>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#00FF99";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+</head>
+<body>

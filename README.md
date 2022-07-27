@@ -19,6 +19,7 @@ Arquivo B | Versão 1 | Versão 2
 ##Criar conta no GitHub
 
 ##Clonar o projeto
+git clone https://github.com/mysmts/curso-frontend.git
 
 ##Commits
 Informação de alteração
