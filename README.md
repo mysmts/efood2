@@ -37,3 +37,9 @@ são ramificações / versões paralelas
 - develop
 - DDD Definition of Done: critério de aceite
 - versionamento 1.0.0
+
+git checkout -b dev 'criar uma branch'
+git checkout -b master 'mudar de branch'
+
+### Merge
+mescla de branchs

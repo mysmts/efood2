@@ -1,0 +1,69 @@
+
+
+table {
+
+	border: 3px solid;
+	background: #1C1C1C;
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+<thead>
+   <tr>
+      <td colspan="4">Tipos de linguagem</td>
+   </tr>
+</thead>
+<tbody>
+   <tr>
+      <td>by HTML Progressivo</td>
+      <td>by HTML Progressivo</td>
+      <td>by HTML Progressivo</td>
+   </tr>
+</tbody>
+
+
+table tr {
+}
+
+table tbody tr:nth-child(even) {
+}
+
+table tbody tr:hover {
+	background-color:  rgba(70,130,180);
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.5rem;
+	text-align: left;
+	vertical-align: middle;
+}
+
+table tr td:first-child {
+	text-align: left;
+	font-weight: bold;
+}
+
+table th {
+	background-color: #696969;
+	color: ;
+	font-weight: bold;
+	text-align: left;
+}
+
+.table-container {
+	padding: 0.5rem 0.5rem;
+}
+
+.table-container h3 {
+}
+
+.table-container tfoot {
+	background: #808080;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+}
