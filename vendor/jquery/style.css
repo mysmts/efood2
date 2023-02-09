@@ -3,11 +3,12 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
+	background-color: #4a4a4a;
 }
 p {
 	margin-bottom: 0px;
 	font-size: 18px;
-	color: #4a4a4a;
+	color: #3a8bcd;
 	line-height: 24px;
 }
 a {
