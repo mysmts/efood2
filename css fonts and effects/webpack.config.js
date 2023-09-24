@@ -60,7 +60,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpack({
-            template: './index.html',
+            template: './src/index.html',
             filename: 'index.html',
             minify: {
                 removeComments: true,
