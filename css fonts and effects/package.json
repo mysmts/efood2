@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch" 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cavalcantemmarcelo/webpack.git"
+    "url": "git+https://github.com/mysmts/curso-frontend/tree/dev/Webpack"
   },
   "keywords": [],
   "author": "",
