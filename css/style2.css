@@ -29,9 +29,9 @@
     /* criação das variaveis em RGBA para background das sections */
 
     background-color: rgba(14, 218, 133, 0.05);
-    --bg-blue-black: rgba(42, 44, 79, 0.8);
-    --bg-with-black: rgb(225, 225, 225);
-    --bg-bege-ligth: rgba(191, 170, 155, 0.9);
+    background: rgba(42, 44, 79, 0.8);
+    background: rgb(225, 225, 225);
+    background: rgba(191, 170, 155, 0.9);
 }
 
 
