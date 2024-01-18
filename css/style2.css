@@ -28,10 +28,10 @@
 
     /* criação das variaveis em RGBA para background das sections */
 
-    background-color: rgba(14, 218, 133, 0.05);
+  background-color: rgba(14, 218, 133, 0.05);
     background: rgba(42, 44, 79, 0.8);
-    background: rgb(225, 225, 225);
-    background: rgba(191, 170, 155, 0.9);
+    background: rgb(0, 56, 177);
+    background: rgba(5, 116, 160, 0.9);
 }
 
 
