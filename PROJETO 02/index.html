@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="./imagens/agenda.png" alt="Agenda" />
+                <h1>Agenda de Contatos</h1>
+            </div> 
+            <span id="totalContatos">Contatos: 0</span>
+        </header>
+        <form id="form-agenda">
+            <img src="./imagens/agenda.png" alt="Ícone nome" id="icone-nome" />
+            <input type="text" id="nome" placeholder="Nome" />
+            <img src="./imagens/numero.png" alt="Ícone número" id="icone-numero" />
+            <input type="tel" id="numero" placeholder="Número" required />  
+            <img src="./imagens/email.png" alt="Ícone email" id="icone-email" />
+            <input type="email" id="email" placeholder="E-mail" />
+            <button type="submit">
+                Salvar
+            </button>
+        </form>
+        <table cellspacing="0" id="contatos">
+        </table>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
