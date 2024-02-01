@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/img/favicon/favicon-rec.ico" type="image/x-icon">
+
+    <!-- FontBootstrap -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <!-- fontGoogle -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display+SC&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <!-- Título -->
+    <title>Surrealismo</title>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg ">
+            <div class="container ">
+                <img src="./src/img/logo.webp" alt="Logo da Rec-retro">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#id-home">Nome</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-musica">Obras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-sobre-nos">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-chat">Principais artistas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="id-home" class="section-carousel">
+            <!-- Slider/Carrossel -->
+            <div id="carousel-nav" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Conteúdo dos slides aqui -->
+                        <img src="./images/obra 1.webp" >
+                    </div>
+                    <div class="col-md-6">
+                        <div class="carousel-inner">
+                            <a href="#id-musica">
+                                <div data-bs-interval="3000" class="carousel-item active">
+                                    <!-- Conteúdo do primeiro slide -->
+                                    <img id="ft000" class="d-block w-90" src="./images/salvador dali.webp" class="imagem-reduzida">
+                                        alt="Salvador Dali">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do segundo slide -->
+                                    <img id="ft001" class="d-block w-90" src="./images/obra 2.png"
+                                        alt="René Magritte">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do terceiro slide -->
+                                    <img id="ft002" class="d-block w-90" src="./images/obra 3.gif"
+                                        alt="Joan Miró">
+                                
+                                <!-- Adicione mais slides conforme necessário -->
+                            </a>
+                            <button data-bs-target="#carousel-nav" data-bs-slide="prev" class="carousel-control-prev"
+                                type="button">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button data-bs-target="#carousel-nav" data-bs-slide="next" class="carousel-control-next"
+                                type="button">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-nav" class="active"
+                                    data-bs-slide-to="0"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Cards -->
+        <section id="id-arte" class="container mt-4">
+            <!-- Criação do estilo do titulo -->
+            <div class="id-sr-titulo-aline-center ">
+                <h1 id="id-sr-titulo" class="txt-envelhecido font-h5">Soun<strong>dR</strong>ound</h1>
+            </div>
+            <div class="row rowTable">
+                <div class="col-md-3 ">
+                    
+                    </div>
+                </div>
+                
+                
+
+        <!-- Sobre Nós -->
+        <section id="id-sobre-nos" class="container mt-4 titulo-envelhecido">
+            <!-- Criação do estilo do titulo -->
+            <h1 class="titulo-envelhecido txt-envelhecido">Sobre Nós</h1>
+            <!-- Conteúdo da seção Sobre Nós -->
+            <div class="row" >
+                <!-- adicionan o texto na primeira coluna -->
+                <div class="col-md-6">
+                    <h5 id="font-h5">1982</h5>
+                    <p id="font-p">A <strong>REC Gospel</strong> é uma loja dedicada a fornecer uma variedade
+                        cuidadosamente
+                        selecionada
+                        de produtos gospel, desde músicas e livros até artigos de decoração inspiradores. Nosso
+                        compromisso é proporcionar uma experiência de compra única, conectando clientes a
+                        conteúdos que inspiram e fortalecem a fé.</p>
+                    <p id="font-p">Com uma equipe apaixonada por música gospel e cultura cristã, buscamos promover
+                        valores
+                        positivos e
+                        edificantes. Na <strong>REC Gospel</strong>, acreditamos no poder transformador da música e da
+                        palavra de Deus, e nos esforçamos para compartilhar essa mensagem por meio de nossos produtos.
+                        Seja
+                        bem-vindo à nossa comunidade!</p>
+                </div>
+                <!-- adicionando na segunda coluna uma imagem -->
+                <div class="col-md-6">
+                    <img id="img-sobre-nos" src="./src/img/sb-2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="id-chat" class="container mt-4 ">
+            <!-- Conteúdo do formulário de contato -->
+            <h1 class="txt-envelhecido id-sr-titulo-aline-center">Entre em Contato</h1>
+            <div class="container mt-5" id="form-chat">
+                <form action="#" method="post" class="mx-auto " style="max-width: 500px;">
+
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Nome" required>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group ">
+                        <input type="email" class="form-control form-control-sm" placeholder="E-mail" required>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="form-group">
+                        <textarea class="form-control form-control-sm" placeholder="Mensagem" rows="10"
+                            style="resize: none;" required></textarea>
+                    </div>
+                    <!-- Botão de Envio -->
+                    <button type="submit" class="btn btn-success btn-block btn-sm float-end">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-light text-center py-3">
+            <!-- Conteúdo do rodapé -->
+            <p>&copy; Todos os direitos reservados - 2024. </p>
+            <small>Desenvolvido por Maysa Matos </small>
+
+        </footer>
+    </div>
+
+    <!-- FontBootstrap JS -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Meu JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
