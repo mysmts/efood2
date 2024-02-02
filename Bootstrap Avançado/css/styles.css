@@ -7,13 +7,6 @@
 }
 
 
-    .imagem-reduzida {
-        width: 150px; /* Defina o tamanho desejado */
-        /* Você pode usar 'height' também se quiser manter a proporção original */
-        /* height: auto; */
-      }
-
-
 .container {
     display: block;
     max-width: 560px;
@@ -73,7 +66,7 @@ form #icone-email {
 form input {
     width: 440px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(57, 2, 94);
     border-bottom-left-radius: 8px;
     padding: 8px;
     padding-left: 46px;
