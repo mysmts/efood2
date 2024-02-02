@@ -1,10 +1,12 @@
-
+$font-family: 'font-family';
+$link-color: #ffffff;
+$product-btn-hover-bg: #2c2c2e;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: font-family;
+  font-family: $font-family;
 }
 
 body {
@@ -43,7 +45,7 @@ header {
     margin-left: 24px;
 
     a {
-      color: link-color;
+      color: $link-color;
       text-decoration: none;
     }
   }
@@ -70,7 +72,7 @@ section {
     .product-button {
       display: block;
       background-color: #0d0d0e;
-      color: link-color;
+      color: $link-color;
       text-align: center;
       padding: 8px 0;
       border-radius: 8px;
@@ -78,7 +80,7 @@ section {
       text-decoration: none;
 
       &:hover {
-        background-color: product-btn-hover-bg;
+        background-color: $product-btn-hover-bg;
       }
     }
   }
