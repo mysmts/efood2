@@ -1,0 +1,174 @@
+/* Cores */
+:root {
+    /* Cores da Itália */
+    /* Verde */
+    --cor-verde: #009246;
+    --cor-verde-hover: #00a857;
+    /* Branco */
+    --cor-branca: #FFFFFF;
+    /* Vermelho */
+    --cor-vermelha: #CE2B37;
+
+    /* Cores personalizadas */
+    /* Cor de fundo */
+    --cor-background: #3C3C3C;
+    /* Cor dos inputs */
+    --cor-input: #282828;
+
+}
+
+/* Estilos Gerais */
+body {
+    /* Fonte para todo o corpo do site */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    /* Fonte para títulos */
+    font-family: 'Playfair Display', serif;
+}
+
+/* Barra de Navegação */
+nav {
+    /* Fonte para a barra de navegação */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Texto em Destaque ou Botões */
+.highlight-text, button {
+    /* Fonte para texto em destaque ou botões */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.navbar {
+    /* Cor de fundo da barra de navegação */
+    background-color: var(--cor-background);
+    /* Espaçamento interno */
+    padding: 15px;
+
+}
+
+#cabecalho .nav .nav-link {
+    color: var(--cor-branca);
+
+}
+
+#fale-conosco button,
+.nav .nav-link.active {
+    background-color: var(--cor-verde);
+    color: var(--cor-branca);
+}
+
+#fale-conosco button:hover,
+.nav .nav-link.active:hover {
+    background-color: var(--cor-verde-hover);
+    color: var(--cor-branca);
+}
+
+/* .nav .nav-link {
+    color: var(--cor-branca);
+} */
+
+
+.navbar-brand,
+.navbar-brand:hover {
+    /* font-family: 'Playfair Display SC', serif; */
+    font-size: 38px;
+    /* Fonte para o título */
+    /* font-family: 'Playfair Display', serif; */
+    /* background: linear-gradient(to bottom right, var(--cor-verde), var(--cor-vermelha)); */
+    /* Degradê diagonal com as cores da Itália */
+    background: linear-gradient(to bottom right, var(--cor-verde), var(--cor-branca), var(--cor-vermelha));
+
+    -webkit-background-clip: text;
+    /* Clip de texto para aplicar o degradê apenas ao texto */
+    color: transparent;
+    /* Torna o texto transparente para exibir o degradê */
+    display: inline-block;
+    /* Permite a aplicação de gradientes em texto em navegadores com suporte limitado */
+    padding: 10px;
+
+}
+
+.navbar-toggler {
+    background-color: #464545ce;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: var(--cor-verde-hover);
+}
+
+.section-title {
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+#sobre-o-restaurante {
+    background-color: antiquewhite;
+}
+
+.bg-ocasioes {
+    background-color: var(--cor-input);
+}
+
+.text-coloreder-1 {
+    color: var(--cor-verde);
+
+}
+
+.text-coloreder-2 {
+    color: var(--cor-branca);
+
+}
+
+.text-coloreder-3 {
+    color: var(--cor-vermelha);
+
+}
+
+.text-coloreder-4 {
+    color: var(--cor-branca);
+
+}
+
+.text-colored-x {
+    color: var(--cor-input);
+
+}
+
+.text-coloreder-icon-facebook {
+    color: #ccc
+}
+
+.text-coloreder-icon-instagram {
+    color: var(--cor-vermelha);
+
+}
+
+.text-coloreder-icon-whatsApp {
+    color: var(--cor-verde);
+
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+
+.social-links li a {
+    text-decoration: none;
+}
+
+
+
+
+@media screen (max-width: 768px) {
+
+    .carousel-item img {
+        height: 280px;
+    }
+
+}

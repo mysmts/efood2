@@ -1,0 +1,625 @@
+index.html
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- fontface Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display+SC&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- icons BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- meu CSS -->
+    <link rel="stylesheet" href="./src/css/main.css">
+
+    <title>Tattoria D'Nanona</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Tattoria D'Nanona</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s1.webp"
+                            alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s2.webp" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s3.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s4.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s5.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s6.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s7.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s8.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s9.webp" alt="Uma mesa com comida">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./src/img/slides/s10.webp" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="9"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="sobre-o-restaurante">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="cacrousel-inner">
+                                    <div data-bs-interval="2800" class="carousel-item active">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns1.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns2.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns3.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns4.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns5.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns6.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns7.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns8.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                    <div data-bs-interval="2800" class="carousel-item">
+                                        <img class="d-block w-100 rounded" src="./src/img/sobre nos/ns9.webp"
+                                            alt="foto frente do retaurante">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre o restaurante</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aperiam nam maiores
+                                provident
+                                quam. Quo, itaque est? Similique perspiciatis, hic rerum placeat soluta officiis quos
+                                quis
+                                temporibus beatae laborum repellendus.
+                            </p>
+                            <h3 class="section-title">Sobre o espaço</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quisquam id
+                                voluptate
+                                voluptatibus sint quod dignissimos provident blanditiis eum et fugit dicta odit mollitia
+                                assumenda quo, molestias velit facilis numquam!
+                            </p>
+                            <ul>
+                                <li>Decoração Rústica</li>
+                                <li>Ambiente Segugo</li>
+                                <li>Fazenda as margens do Lago Siciliano</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5 bg-ocasioes">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center text-coloreder-4">Para todas as ocasiões</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./src/img/recepçao/r1.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-coloreder-1 fs-4"><i class="bi bi-calendar-heart-fill"></i>
+                            Aniversário
+                        </h3>
+                        <p class="text-coloreder-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            cupiditate nam
+                            consequuntur, placeat sequi sed. Quidem saepe iste voluptatum eos debitis libero,
+                            necessitatibus voluptatibus, asperiores culpa vitae, quam adipisci magni.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./src/img/recepçao/r3.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-coloreder-2 fs-4"><i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepção para casamentos
+                        </h3>
+                        <p class="text-coloreder-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            cupiditate nam
+                            consequuntur, placeat sequi sed. Quidem saepe iste voluptatum eos debitis libero,
+                            necessitatibus voluptatibus, asperiores culpa vitae, quam adipisci magni.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./src/img/recepçao/r4.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-coloreder-3 fs-4"><i class="bi bi-people-fill"></i>
+                            Confratenização
+
+                        </h3>
+                        <p class="text-coloreder-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            cupiditate nam
+                            consequuntur, placeat sequi sed. Quidem saepe iste voluptatum eos debitis libero,
+                            necessitatibus voluptatibus, asperiores culpa vitae, quam adipisci magni.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso cardápio</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type=" button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool"
+                                class="fw-bold text-start nav-link text-colored-x active">Bebidas não
+                                alcoólicas</button>
+                            <button type=" button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas"
+                                class="fw-bold text-start nav-link text-colored-x ">Bebidas
+                                alcoólicas</button>
+                            <button type=" button" data-bs-toggle="tab" data-bs-target="#entradas"
+                                class="fw-bold text-start nav-link text-colored-x ">Entradas</button>
+                            <button type=" button" data-bs-toggle="tab" data-bs-target="#pratos-principais"
+                                class="fw-bold text-start nav-link text-colored-x ">Prato
+                                principal</button>
+                            <button type=" button" data-bs-toggle="tab" data-bs-target="#sobremesas"
+                                class="fw-bold text-start nav-link text-colored-x ">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/coca-cola.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Coca-Cola</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/suco.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Spremuta di Arancia</h5>
+                                        <p>
+                                            Suco de laranja fresco é uma escolha clássica e popular na Itália. Os
+                                            italianos apreciam a qualidade das laranjas frescas, especialmente durante a
+                                            temporada de colheita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/b3.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Limonata</h5>
+                                        <p>
+                                            Limonada italiana feita com limões frescos, água, açúcar e gelo. É uma
+                                            bebida refrescante, perfeita para os dias quentes de verão.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/b4.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold">Pesca (Pêssego) Frullato</h5>
+                                        <p>
+                                            Um frullato é uma espécie de batido ou smoothie. Um frullato de pêssego
+                                            feito com pêssegos frescos, iogurte ou leite e um toque de mel pode ser uma
+                                            opção deliciosa.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/b5.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold">Mela (Maçã) Schiacciata</h5>
+                                        <p>
+                                            Um suco prensado de maçã, muitas vezes misturado com outras frutas, como
+                                            peras ou morangos, para criar uma combinação de sabores.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2 rounded"
+                                            src="./src/img/cardapio/bebidas/s-alcool/b6.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold">Anguria (Melancia) Fresca:</h5>
+                                        <p>
+                                            Um suco de melancia fresca pode ser muito popular durante os meses mais
+                                            quentes. A melancia é naturalmente doce e hidratante.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2"
+                                            src="./src/img/cardapio/bebidas/c-alcool/cerveja.jpg" alt="cerveja">
+                                        <h5 class="text-colored fw-bold">Cerveja</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2"
+                                            src="./src/img/cardapio/bebidas/c-alcool/Vinho-com-alcool.png" alt="vinho">
+                                        <h5 class="text-colored fw-bold">Vinho 1522 envelhecido</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2"
+                                            src="./src/img/cardapio/bebidas/c-alcool/vinho.jpg" alt="vinho">
+                                        <h5 class="text-colored fw-bold">Vinho Italiano</h5>
+                                        <p>
+                                            A Itália é mundialmente famosa por seus vinhos. Existem várias regiões
+                                            vinícolas, cada uma produzindo vinhos distintos.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2"
+                                            src="./src/img/cardapio/bebidas/c-alcool/ac2.jpeg" alt="vinho">
+                                        <h5 class="text-colored fw-bold">Negroni</h5>
+                                        <p>
+                                            Um coquetel clássico italiano que consiste em partes iguais de gin, vermute
+                                            tinto e Campari. É servido com gelo e uma fatia de laranja.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2"
+                                            src="./src/img/cardapio/bebidas/c-alcool/ac3.jpeg" alt="vinho">
+                                        <h5 class="text-colored fw-bold">Aperol Spritz:</h5>
+                                        <p>
+                                            Uma bebida refrescante e efervescente feita com Aperol, prosecco e água com
+                                            gás. É um aperitivo popular, especialmente durante os meses mais quentes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/en0.jpeg"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Osso Buco</h5>
+                                        <p>
+                                            Descrição: "Osso Buco" significa "osso furado" em italiano, referindo-se à
+                                            canela de vitelo, que é o ingrediente principal deste prato. A carne é
+                                            cozida lentamente em um guisado saboroso, geralmente feito com vinho branco,
+                                            caldo de carne, tomates, cebolas, cenouras e ervas. O prato é muitas vezes
+                                            servido com gremolata, uma mistura de salsa, alho e raspas de limão, que
+                                            adiciona frescor ao prato.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/cn2.webp"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Grill Romana</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/en1.jpeg"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Bruschetta</h5>
+                                        <p>
+                                            Descrição: Fatias de pão grelhado esfregadas com alho e regadas com azeite
+                                            de oliva extra virgem. Geralmente, são cobertas com tomates frescos picados,
+                                            manjericão e, às vezes, queijo mozzarella. Uma versão clássica de bruschetta
+                                            é simples e deliciosa.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/en2.jpeg"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Arancini</h5>
+                                        <p>
+                                            Descrição: Bolinhos de arroz fritos recheados. O arroz é geralmente cozido
+                                            com caldo, queijo parmesão e açafrão, e depois moldado em bolas recheadas
+                                            com carne ragu, molho de tomate, ervilhas ou queijo. As bolas são empanadas
+                                            e fritas até ficarem douradas e crocantes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/en2.jpeg"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Carpaccio</h5>
+                                        <p>
+                                            Descrição: Finas fatias de carne crua, muitas vezes carne bovina, mas também
+                                            pode ser peixe ou vitela. O carpaccio é marinado em azeite de oliva, suco de
+                                            limão, sal e pimenta, e é servido com lascas de queijo parmesão, rúcula e às
+                                            vezes alcaparras.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/cn3.webp"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Tostana Palusa</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 mt-2" src="./src/img/cardapio/carnes/cn4.webp"
+                                            alt="entrada">
+                                        <h5 class="text-colored fw-bold">Ovelha Pico</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p1.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Pizza</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p2.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Pasta Italiana</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p3.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Tavola Fredda</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p4.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Verdure Siciliane</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p5.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Pasta Veneziana</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50 mt-2" src="./src/img/cardapio/pratos/p6.webp"
+                                            alt="Salmao">
+                                        <h5 class="text-colored fw-bold">Pecore Rustiche</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100  h-50  mt-2" src="./src/img/cardapio/pratos/p7.webp"
+                                            alt="Pizza">
+                                        <h5 class="text-colored fw-bold">Pizza Lorenzo</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-1.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Amaretti</h5>
+                                        <p>
+                                            Biscoitos italianos de amêndoa, geralmente crocantes por fora e macios por
+                                            dentro, com um sabor delicioso de amêndoa.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-2.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Tiramisù</h5>
+                                        <p>
+                                            Uma clássica sobremesa italiana feita com camadas de biscoitos embebidos em
+                                            café e creme de queijo mascarpone, polvilhada com cacau em pó.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-3.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Cannoli</h5>
+                                        <p>
+                                            Tubos de massa frita recheados com um creme doce, geralmente à base de
+                                            ricota, açúcar e baunilha, com pedaços de frutas cristalizadas ou chocolate.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-4.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Panna Cotta</h5>
+                                        <p>
+                                            Uma sobremesa de creme cozido, geralmente adoçado com açúcar e aromatizado
+                                            com baunilha, gelatina ou agar-agar é adicionado para dar consistência.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-5.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Torta della Nonna</h5>
+                                        <p>
+                                            Uma torta italiana clássica com recheio de creme de confeiteiro e pinhões,
+                                            geralmente coberta com açúcar de confeiteiro.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-6.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Cassata Siciliana</h5>
+                                        <p>
+                                            Uma sobremesa siciliana feita com camadas de bolo de ricota, frutas
+                                            cristalizadas, chocolate e uma cobertura de glacê.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100   mt-2" src="./src/img/sobre mesa/sb-7.png"
+                                            alt="Bolo">
+                                        <h5 class="text-colored fw-bold">Zabaglione</h5>
+                                        <p>
+                                            Um creme leve e espumoso feito com gemas de ovo, açúcar e vinho doce,
+                                            geralmente servido quente ou frio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Fale conosco
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone</label>
+                                <input type="tel" class="form-control" id="telefone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Seu mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4"><i class="bi bi-hand-thumbs-up-fill"></i>Redes Sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5 "><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#"><i
+                                            class="bi bi-instagram text-coloreder-icon-instagram"></i></a></li>
+                                <li class="fs-5 "><a href="#"><i
+                                            class="bi bi-whatsapp text-coloreder-icon-whatsApp"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <H3 class="section-title fs-4"><i class="bi bi-cursor-fill"></i>Endenreço</h3>
+                            Rua Teste Exemplo nº 147, Bootstrap - JavaScript - JS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
