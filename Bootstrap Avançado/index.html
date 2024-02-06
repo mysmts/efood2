@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./src/img/favicon/favicon-rec.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/face-guera-salvador-dali.jpg" type="image/x-icon">
 
     <!-- FontBootstrap -->
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
 
-    <!-- fontGoogle -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display+SC&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <!-- FontGoogle -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display+SC&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Meu CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-
 
     <!-- Título -->
     <title>Surrealismo</title>
@@ -35,7 +33,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav navbar-nav nav-pills">
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="#id-home">Nome</a></li>
                         <li class="nav-item"><a class="nav-link" href="#id-musica">Obras</a></li>
                         <li class="nav-item"><a class="nav-link" href="#id-sobre-nos">Sobre</a></li>
@@ -45,80 +43,54 @@
             </div>
         </div>
     </header>
+
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="id-home" class="section-carousel">
             <!-- Slider/Carrossel -->
             <div id="carousel-nav" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Conteúdo dos slides aqui -->
-                        <img src="./images/obra 10TESTE2.jpg" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Conteúdo do primeiro slide -->
+                        <img class="d-block w-100" src="./images/salvador daliTESTE.jpg" alt="Salvador Dali">
                     </div>
-                    <div class="col-md-6">
-                        <div class="carousel-inner">
-                            
-                                <div data-bs-interval="3000" class="carousel-item active">
-                                    <!-- Conteúdo do primeiro slide -->
-                                    <img id="ft000" class="d-block w-90" src="./images/salvador daliTESTE.jpg">
-                                </div>
-                                <div class="carousel-item">
-                                    <!-- Conteúdo do segundo slide -->
-                                    <img id="ft001" class="d-block w-90" src="./images/obra 2TESTE.jpg"
-                                        alt="René Magritte">
-                                </div>
-                                <div class="carousel-item">
-                                    <!-- Conteúdo do terceiro slide -->
-                                    <img id="ft002" class="d-block w-90" src="./images/obra 3TESTE.png"
-                                        alt="Joan Miró">
-                                
-                                <!-- Adicione mais slides conforme necessário -->
-                            </a>
-                            <button data-bs-target="#carousel-nav" data-bs-slide="prev" class="carousel-control-prev"
-                                type="button">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button data-bs-target="#carousel-nav" data-bs-slide="next" class="carousel-control-next"
-                                type="button">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carousel-nav" class="active"
-                                    data-bs-slide-to="0"></button>
-                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="2"></button>
-                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="3"></button>
-                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="4"></button>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <!-- Conteúdo do segundo slide -->
+                        <img class="d-block w-100" src="./images/obra2TESTE.jpg">
                     </div>
+                    <!-- Adicione mais slides conforme necessário -->
                 </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-nav" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-nav" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </section>
-        
-                
 
         <!-- Sobre Nós -->
         <section id="id-sobre-nos" class="container mt-4 titulo-envelhecido">
             <!-- Criação do estilo do titulo -->
             <h1 class="titulo-envelhecido txt-envelhecido">Sobre o Surrealismo</h1>
             <!-- Conteúdo da seção Sobre Nós -->
-            <div class="row" >
+            <div class="row">
                 <!-- adicionan o texto na primeira coluna -->
                 <div class="col-md-6">
-                    
-                    <p id="font-p">O <strong>Surrealismo</strong> 
-                        Surrealismo é um dos movimentos europeus de vanguarda surgidos no início do século XX. 
-                        Apesar de influenciar outras áreas artísticas, ele está predominantemente vinculado às artes visuais. Assim, a pintura surrealista constrói imagens que lembram ilógicos sonhos, de forma a investigar o inconsciente humano.
-                        </p>
-                   
+                    <p id="font-p">O <strong>Surrealismo</strong> é um dos movimentos europeus de vanguarda surgidos no
+                        início do século XX. Apesar de influenciar outras áreas artísticas, ele está predominantemente
+                        vinculado às artes visuais. Assim, a pintura surrealista constrói imagens que lembram ilógicos
+                        sonhos, de forma a investigar o inconsciente humano.</p>
                 </div>
                 <!-- adicionando na segunda coluna uma imagem -->
                 <div class="col-md-6">
-                    <img id="img-sobre-nos" src="./src/img/sb-2.png" alt="">
+                    <img id="img-sobre-nos" src="./images/face-guera-salvador-dali.jpg" alt="">
                 </div>
             </div>
         </section>
+
+
 
         <!-- Formulário de Contato -->
         <section id="id-chat" class="container mt-4 ">
@@ -151,9 +123,8 @@
         <!-- Rodapé -->
         <footer class="text-light text-center py-3">
             <!-- Conteúdo do rodapé -->
-            <p>&copy; Todos os direitos reservados - 2024. </p>
+            <p> Todos os direitos reservados - 2024. </p>
             <small>Desenvolvido por Maysa Matos </small>
-
         </footer>
     </div>
 
