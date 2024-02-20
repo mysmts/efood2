@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Substitua a URL abaixo pela API do GitHub que fornece as informações desejadas
-    var githubApiUrl = 'https://api.github.com/users/ogiansouza';
+    var githubApiUrl = 'https://github.com/mysmts/curso-frontend';
 
     // Realiza a solicitação AJAX para obter dados do GitHub
     $.ajax({
