@@ -1,0 +1,4 @@
+Criar fork do projeto:
+https://github.com/ogiansouza/base_exercicio_css_in_js
+
+E trocar a estilização para o Styled Components
