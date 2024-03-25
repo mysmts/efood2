@@ -1,10 +1,10 @@
 import { ThemeProvider } from 'styled-components'
-import Hero from './components/Hero'
-import ListaVagas from './containers/ListaVagas'
 
-import themeOrigin from './containers/theme/origin'
+import ListaVagas from './componentes/containers/ListadeVagas'
 
-import Cabecalho from './components/Cabecalho'
+import themeOrigin from './componentes/containers/Themes/origin'
+
+import Cabecalho from './componentes/cabecalho'
 import EstiloGlobal, { Container } from './styles'
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <ThemeProvider theme={themeOrigin}>
       <EstiloGlobal />
       <Cabecalho />
-      <Hero />
+
       <Container>
-        <ListaVagas />
-      </Container>
+        <ListadeVagas />
+      </containers>
     </ThemeProvider>
   )
 }
