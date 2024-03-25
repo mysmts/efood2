@@ -16,7 +16,7 @@ const alunosAprovados = (arrayAlunos) => {
 const alunosAprovadosArray = alunosAprovados(alunos);
 console.log('Alunos aprovados:', alunosAprovadosArray);
 
-Alunos aprovados: [ { nome: 'João', nota: 8 },
+alunos aprovados: [ { nome: 'João', nota: 8 },
                      { nome: 'Carlos', nota: 7 },
                      { nome: 'Ana', nota: 6 },
                      { nome: 'Pedro', nota: 9 } ]
