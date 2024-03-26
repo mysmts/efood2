@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício boas práticas de CSS</title>
     <link rel="stylesheet" href="./bem/main.css">
+    <style>
+        .produto__imagem {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <form class="form">
-        <div class="form__control">
-            <label for="nome">Seu nome:</label>
-            <input id="nome" type="text" />
+    <div class="produtos">
+        <div class="produto">
+            <img class="produto__imagem" src="./colar2.png">
+            <h4 class="produto__nome">Colar Pirita</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
         </div>
-        <button class="form__submit form__submit--sending" type="submit">Enviar</button>
-    </form>
+        <div class="produto produto--destaque">
+            <img class="produto__imagem" src="./colar1.png">
+            <h4 class="produto__nome">Colar Ametista</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
+        </div>
+        <div class="produto">
+            <img class="produto__imagem" src="./colar3.png">
+            <h4 class="produto__nome">Colar Pérola</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
+        </div>
+    </div>
 </body>
 </html>
