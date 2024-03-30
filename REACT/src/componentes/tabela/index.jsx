@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"; 
-import "../Tabela/Tabela.modules.css";
+import "./Tabela.modules.css";
 
 function TabelaIMC() {
   return (

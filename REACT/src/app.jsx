@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TabelaIMC from "./componentes/tabela/index";
+import TabelaIMC from "./componentes/Tabela/index";
 import Perfil from "./componentes/perfil/index";
 import Formulario from "./componentes/formulario/index"; // Adicionei a importação do componente Formulario
 
