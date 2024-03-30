@@ -13,24 +13,27 @@
     grid-column-gap: 1%;
 }
 
-.product { /* bloco */
-    /* Estilos para o bloco 'produto' */
-}
 
-.product__image { /* elemento */
+
+.product-image { /* elemento */
     width: 100%;
 }
 
-.product__name { /* elemento */
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name { /* elemento */
     font-size: 1.2em;
     margin: 8px 0;
 }
 
-.product__description { /* elemento */
+.product-description { /* elemento */
     color: gray;
 }
 
-.product--highlighted { /* modificador */
+.product-highlighted { /* modificador */
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
