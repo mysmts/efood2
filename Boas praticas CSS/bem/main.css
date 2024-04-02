@@ -2,21 +2,21 @@
 .product {}
 
 /* Element */
-.product-image {
+.product__image {
     width: 100%;
 }
 
-.product-name {
+.product__name {
     font-size: 1.2em;
     margin: 8px 0;
 }
 
-.product-description {
+.product__description {
     color: gray;
 }
 
 /* Modifier */
-.product-highlighted {
+.product--highlighted {
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
