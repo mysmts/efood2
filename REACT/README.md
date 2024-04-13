@@ -1,6 +1,9 @@
+# calculadora_imc_react
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exercício do Módulo 28: Construir uma calculadora de IMC que mostra na tabela qual a classificação
+
+
 
 Currently, two official plugins are available:
 
