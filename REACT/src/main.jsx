@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx'; // Verifique se o caminho está correto
+import App from './App.jsx'; 
 import './global.css';
 
 ReactDOM.render(
