@@ -98,7 +98,7 @@ const ListaVagas = () => {
   return (
     <div>
       <FormVagas aoPesquisar={(termo: string) => setFiltro(termo)} />
-      <ListaDasVagas>
+      <ListaVagas>
         {vagasFiltradas.map((vag) => (
           <Vaga
             key={vag.id}
@@ -111,7 +111,7 @@ const ListaVagas = () => {
             requisitos={vag.requisitos}
           />
         ))}
-      </ListaDasVagas>
+      </ListaVagas>
     </div>
   )
 }
