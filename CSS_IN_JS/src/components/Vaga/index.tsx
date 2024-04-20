@@ -1,4 +1,7 @@
-import { LinkAnuncio, TitleAnuncioDaVaga, VagasAnuncio } from './styles'
+// src/components/Vaga/index.tsx
+
+import React from 'react';
+import { LinkAnuncio, TitleAnuncioDaVaga, VagasAnuncio } from './styles'; 
 
 type Props = {
   titulo: string
@@ -29,9 +32,4 @@ const Vaga = (props: Props) => (
 export default Vaga
 
 // src/components/Vaga/index.tsx
-
-import React from 'react';
-
-// Seu componente Vaga ...
-
 export {}; // Adicione este export vazio para tornar o arquivo um módulo
