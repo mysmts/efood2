@@ -1,43 +1,40 @@
-import { Produto as ProdutoType } from '../App'
-import Produto from '../components/Produto'
-
-import * as S from './styles'
+import Produto from '../components/Produto';
+import { useGetProdutoQuery } from '../services/api';
+import * as S from './styles';
+import { Produto as ProdutoType } from '../store/App';
 
 type Props = {
-  produtos: ProdutoType[]
-  favoritos: ProdutoType[]
-  adicionarAoCarrinho: (produto: ProdutoType) => void
-  favoritar: (produto: ProdutoType) => void
-}
+  favoritos: ProdutoType[];
+  favoritar: (produto: ProdutoType) => void;
+};
 
-const ProdutosComponent = ({
-  produtos,
-  favoritos,
-  adicionarAoCarrinho,
-  favoritar
-}: Props) => {
+const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
+  const { data: produtos, isLoading, error } = useGetProdutoQuery();
+
+  console.log('Produtos:', produtos);
+
+  if (isLoading) return <h2>Carregando produtos...</h2>;
+  if (error) return <h2>Ocorreu um erro ao carregar os produtos.</h2>;
+
   const produtoEstaNosFavoritos = (produto: ProdutoType) => {
-    const produtoId = produto.id
-    const IdsDosFavoritos = favoritos.map((f) => f.id)
+    const produtoId = produto.id;
+    const idsDosFavoritos = favoritos.map((f) => f.id);
 
-    return IdsDosFavoritos.includes(produtoId)
-  }
+    return idsDosFavoritos.includes(produtoId);
+  };
 
   return (
-    <>
-      <S.Produtos>
-        {produtos.map((produto) => (
-          <Produto
-            estaNosFavoritos={produtoEstaNosFavoritos(produto)}
-            key={produto.id}
-            produto={produto}
-            favoritar={favoritar}
-            aoComprar={adicionarAoCarrinho}
-          />
-        ))}
-      </S.Produtos>
-    </>
-  )
-}
+    <S.Produtos>
+      {produtos.map((produto) => (
+        <Produto
+          estaNosFavoritos={produtoEstaNosFavoritos(produto)}
+          key={String(produto.id)} // Garante que a chave seja uma string
+          produto={produto}
+          favoritar={favoritar}
+        />
+      ))}
+    </S.Produtos>
+  );
+};
 
-export default ProdutosComponent
+export default ProdutosComponent;
