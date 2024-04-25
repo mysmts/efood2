@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { cores } from '../../styles'
+import { cores } from '../../store/styles'
 
 export const Produto = styled.div``
 

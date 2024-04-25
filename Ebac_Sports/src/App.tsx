@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import Produtos from './containers/Produtos'
+import Produtos from './containers/Produto'
 
 import { Provider } from 'react-redux'
-import { GlobalStyle } from './styles'
+import { GlobalStyle } from './store/styles'
 
 import { store } from './store'
 

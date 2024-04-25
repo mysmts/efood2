@@ -1,7 +1,7 @@
 import Produto from '../components/Produto';
 import { useGetProdutoQuery } from '../services/api';
 import * as S from './styles';
-import { Produto as ProdutoType } from '../store/App';
+import { Produto as ProdutoType } from '../App';
 
 type Props = {
   favoritos: ProdutoType[];
@@ -13,7 +13,7 @@ const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
 
   console.log('Produtos:', produtos);
 
-  if (isLoading) return <h2>Carregando produtos...</h2>;
+  if (isLoading) return <h2>Carregando Produtos...</h2>;
   if (error) return <h2>Ocorreu um erro ao carregar os produtos.</h2>;
 
   const produtoEstaNosFavoritos = (produto: ProdutoType) => {
@@ -25,7 +25,7 @@ const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
 
   return (
     <S.Produtos>
-      {produtos.map((produto) => (
+      {Produto.map((produto) => (
         <Produto
           estaNosFavoritos={produtoEstaNosFavoritos(produto)}
           key={String(produto.id)} // Garante que a chave seja uma string
