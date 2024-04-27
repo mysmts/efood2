@@ -2,6 +2,7 @@ import Produto from '../components/Produto';
 import { useGetProdutoQuery } from '../services/api';
 import * as S from './styles';
 import { Produto as ProdutoType } from '../App';
+import React from 'react';
 
 type Props = {
   favoritos: ProdutoType[];
@@ -16,6 +17,11 @@ const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
   if (isLoading) return <h2>Carregando Produtos...</h2>;
   if (error) return <h2>Ocorreu um erro ao carregar os produtos.</h2>;
 
+  // Verificar se produtos é um array antes de mapeá-lo
+  if (!Array.isArray(produtos)) {
+    return <h2>Nenhum produto encontrado.</h2>;
+  }
+
   const produtoEstaNosFavoritos = (produto: ProdutoType) => {
     const produtoId = produto.id;
     const idsDosFavoritos = favoritos.map((f) => f.id);
@@ -25,12 +31,12 @@ const ProdutosComponent = ({ favoritos, favoritar }: Props) => {
 
   return (
     <S.Produtos>
-      {Produto.map((produto) => (
+      {produtos.map((produto) => (
         <Produto
-          estaNosFavoritos={produtoEstaNosFavoritos(produto)}
-          key={String(produto.id)} // Garante que a chave seja uma string
+          key={String(produto.id)}
           produto={produto}
           favoritar={favoritar}
+          estaNosFavoritos={produtoEstaNosFavoritos(produto)}
         />
       ))}
     </S.Produtos>

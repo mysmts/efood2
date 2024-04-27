@@ -1,18 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux'; // Import corrigido
-import Produto from '../components/Produto'; // Import corrigido
-import { useGetProdutoQuery } from '../services/api'; // Import corrigido
-import { RootReducer } from '../store'; // Import adicionado
+import Produto, { paraReal } from '../Produto'; // Import corrigido
+import { useGetProdutoQuery } from '../../services/api'; // Import corrigido
+import { RootReducer } from '../../store'; 
 
 import * as S from './styles'; // Import corrigido
 
-type Props = {
+type Produto= {
   favoritos: Produto[];
 };
 
-const Header = ({ favoritos }: Props) => {
+const Header = ({ favoritos }: Produto) => {
   const itens = useSelector((state: RootReducer) => state.carrinho.itens);
-  const valorTotal = itens.reduce((acc, item) => {
+  const valorTotal = itens.reduce((acc: number, item: { preco: any; }) => {
     acc = typeof acc === 'number' ? acc : 0;
     acc += item.preco;
     return acc;
@@ -23,7 +23,7 @@ const Header = ({ favoritos }: Props) => {
       <h1>EBAC Sports</h1>
       <div>
         <span>{favoritos.length} favoritos</span>
-        <img src={require('../../assets/cesta.png').default} alt="Cesta" />
+        <img src={require('../../assets/cesta.png').default} alt="cesta"/>
         <span>
           {itens.length} itens, valor total: {paraReal(valorTotal)}
         </span>

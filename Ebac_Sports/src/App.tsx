@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import React from 'react';
 import Header from './components/Header'
-import Produtos from './containers/Produto'
+import Produtos from './containers/Produtos'
 
 import { Provider } from 'react-redux'
 import { GlobalStyle } from './store/styles'
@@ -25,6 +25,7 @@ function App() {
       setFavoritos([...favoritos, produto])
     }
   }
+  
 
   return (
     <Provider store={store}>
