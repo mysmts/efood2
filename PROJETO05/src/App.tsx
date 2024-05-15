@@ -1,18 +1,15 @@
-import BarraLateral from './containers/BarraLateral'
-import EstiloGlobal, { ContainerGeral } from './globalStyles'
-import { SecaoPrincipal } from './containers/SecaoPrincipal'
 import { Provider } from 'react-redux'
+import ListaDeContatos from './Containers/ListaDeContatos'
 import store from './store'
+import EstiloGlobal, { Container } from './styles'
 
 function App() {
   return (
     <Provider store={store}>
       <EstiloGlobal />
-      <ContainerGeral>
-        <BarraLateral />
-        <SecaoPrincipal />
-      </ContainerGeral>
-      {/* Parei na aula Conheça Enums */}
+      <Container>
+        <ListaDeContatos />
+      </Container>
     </Provider>
   )
 }
