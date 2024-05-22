@@ -1,7 +1,18 @@
-import styled from 'styled-components'
-import variaveis from '../../styles/variaveis'
+import styled from 'styled-components';
+import variaveis from './../../styles/variaveis';
 
-// disposição do meu formulario em linha
+// Container principal que centraliza os elementos
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+`;
+
+// Disposição do formulário em linha
 export const Formulario = styled.form`
   display: flex;
   align-items: center;
@@ -12,9 +23,9 @@ export const Formulario = styled.form`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
-// estilo do meu botão principal de adicionar
+// Estilo do botão principal de adicionar
 export const Button = styled.button`
   background: ${variaveis.verde};
   color: ${variaveis.branco};
@@ -22,8 +33,8 @@ export const Button = styled.button`
   cursor: pointer;
   padding: 8px;
   border-radius: 9px;
-  width: 225px; /* Defina o tamanho fixo desejado */
-  height: 35px; /* Defina a altura fixa desejada */
+  width: 225px;
+  height: 35px;
 
   &:hover {
     background: ${variaveis.verdeHover};
@@ -32,13 +43,14 @@ export const Button = styled.button`
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
-// Aqui passo por função no styled() os atributos do meu Botão e trato apenas o Hover para que não fique com o mesmo hover verde
+// Botão de cancelar com hover diferente
 export const CancelButton = styled(Button)`
   background-color: ${variaveis.vermelho};
-  width: 78px; /* Defina o tamanho fixo desejado */
-  height: 35px; /* Defina a altura fixa desejada */
+  width: 78px;
+  height: 35px;
+
   &:hover {
     background: ${variaveis.vermelhoHover};
   }
@@ -46,9 +58,9 @@ export const CancelButton = styled(Button)`
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
-// Aqui estou definindo uma regra geral para os inputs
+// Regra geral para os inputs
 export const InputNome = styled.input`
   padding: 8px;
   border: 1px solid ${variaveis.cinzaLight};
@@ -56,10 +68,9 @@ export const InputNome = styled.input`
   line-height: 15px;
   font-family: 'Roboto Mono', monospace;
   width: 100%;
-`
+`;
 
-// Agora passando uma função dentro do styled ()
-// Aqui está recebendo por função as informações do (InputNome) e adiciono um espacamento e margin
+// Input de busca com estilo adicional
 export const InputSearch = styled(InputNome)`
   width: 100%;
   margin-top: 8px;
@@ -70,18 +81,37 @@ export const InputSearch = styled(InputNome)`
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
-// Aqui está recebendo por função as informações do (InputNome) e adiciono um espacamento e margin
+// Input de telefone com estilo adicional
 export const InputTelefone = styled(InputNome)`
   width: 70%;
 
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
-// Aqui está recebendo por função as informações do (InputNome) e adiciono um espacamento e margin
+// Input de email com estilo adicional
 export const InputEmail = styled(InputNome)`
   width: 100%;
-`
+`;
+
+// Lista de contatos
+export const Lista = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+`;
+
+export const ItemLista = styled.li`
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: ${variaveis.cinzaLight};
+  border-radius: 4px;
+`;
