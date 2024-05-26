@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="./logo192.png" />
-
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="./manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
-  </head>
-  <body>
-    <div class="background-container">
-    <div id="root"></div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .background-container {
+            background-image: url('https://i.thenile.io/r1000/0849803058616.jpg?r=5ffebdecc01c5');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+        .comment-section {
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9); /* Ajuste de transparência para se aproximar da imagem de fundo */
+            padding: 10px;
+            border-radius: 20px; /* Suavizando as bordas */
+            margin-top: auto; /* Posicionando na parte inferior */
+            margin-bottom: 20px; /* Adicionando margem inferior para separar do rodapé */
+        }
+        .comment-section form {
+            margin-bottom: 20px;
+        }
+        .comment-section .comment {
+            background-color: rgba(153, 235, 194, 0.8);
+            border: 1px solid #52fcb5;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container" data-testid="background-container">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </div>
+
+    <div class="comment-section" data-testid="comment-section">
+        <h1>Seção de Comentários</h1>
+        <form id="commentForm" data-testid="comment-form">
+            <label for="commentText">Adicione um comentário:</label><br>
+            <textarea id="commentText" rows="4" cols="50" required data-testid="comment-textarea"></textarea><br><br>
+            <button type="submit" data-testid="submit-button">Adicionar Comentário</button>
+        </form>
+        <!-- Comentários serão inseridos aqui -->
+    </div>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obter o texto do comentário
+            const commentText = document.getElementById('commentText').value;
+
+            // Criar um novo elemento de comentário
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            newComment.textContent = commentText;
+
+            // Adicionar o novo comentário à seção de comentários
+            const commentSection = document.querySelector('.comment-section');
+            commentSection.appendChild(newComment);
+
+            // Limpar o campo de texto
+            document.getElementById('commentText').value = '';
+        });
+    </script>
 </body>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</div>
-  </body>
 </html>
+
+
