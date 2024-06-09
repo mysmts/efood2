@@ -1,24 +1,30 @@
-import React, { ReactNode } from 'react';
-import PostComments from '../PostComments';
+import React from 'react';
 import styles from './Post.module.css';
 
-type Props = {
-  children: ReactNode;
+interface PostProps {
   imageUrl: string;
+  children: React.ReactNode;
+}
+
+const Post: React.FC<PostProps> = ({ imageUrl, children }) => {
+  return (
+    <div className={styles.post}>
+      <img className={styles.postImage} src={imageUrl} alt="Post" />
+      <p className={styles.postText}>{children}</p>
+      <div data-testid="post-comments-wrapper">
+        <div>
+          <ul className={styles.postComments} data-testid="post-comments" />
+          <form className={styles.postCommentsForm}>
+            <textarea className={styles.postCommentsFormTextarea} required />
+            <button className={styles.postCommentsFormButton} type="submit" data-testid="comment-button">
+              Comentar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-const Post: React.FC<Props> = ({ children, imageUrl }) => (
-  <div className={styles.post}>
-    <img className={styles['post-image']} src={imageUrl} alt="Post" />
-    <p className={styles['post-text']}>{children}</p>
-    <div data-testid="post-comments-wrapper">
-      <PostComments />
-    </div>
-  </div>
-);
-
 export default Post;
-
-
-
 

@@ -1,5 +1,5 @@
 import React, { FormEvent, useState } from 'react';
-import Comment from '../../models/Comment';
+import Comment from '../../models/Comments';
 import styles from './PostComments.module.css';
 
 const PostComments: React.FC = () => {
@@ -38,5 +38,3 @@ const PostComments: React.FC = () => {
 };
 
 export default PostComments;
-
-
