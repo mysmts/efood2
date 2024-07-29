@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Header = styled.div`
   width: 100%;
@@ -7,12 +7,12 @@ export const Header = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
-`
+`;
 
 export const Logo = styled.img`
   width: 125px;
   margin-top: 65px;
-`
+`;
 
 export const Slogan = styled.p`
   line-height: 40px;
@@ -21,4 +21,4 @@ export const Slogan = styled.p`
   width: 540px;
   text-align: center;
   margin-top: 140px;
-`
+`;

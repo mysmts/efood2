@@ -1,10 +1,10 @@
-import { Restaurante } from '../../Pages/Home'
-import Restaurant from '../Restaurant'
-import { List } from './styles'
+import { Restaurante } from "../../Pages/Home";
+import Restaurant from "../Restaurant";
+import { List } from "./styles";
 
 export type Props = {
-  restaurantes: Restaurante[]
-}
+  restaurantes: Restaurante[];
+};
 
 const RestaurantList = ({ restaurantes }: Props) => {
   return (
@@ -20,7 +20,7 @@ const RestaurantList = ({ restaurantes }: Props) => {
         />
       ))}
     </List>
-  )
-}
+  );
+};
 
-export default RestaurantList
+export default RestaurantList;

@@ -1,8 +1,8 @@
-import logo from '../../assets/images/logo.svg'
-import instagram from '../../assets/images/Instagram.svg'
-import meta from '../../assets/images/Meta.svg'
-import x from '../../assets/images/X.svg'
-import * as S from './styles'
+import logo from "../../assets/images/logo.svg";
+import instagram from "../../assets/images/Instagram.svg";
+import meta from "../../assets/images/Meta.svg";
+import x from "../../assets/images/X.svg";
+import * as S from "./styles";
 const Footer = () => (
   <S.FooterStyle>
     <S.Logo src={logo} alt="efood" />
@@ -23,6 +23,6 @@ const Footer = () => (
       estabelecimento contratado.
     </S.Copyrights>
   </S.FooterStyle>
-)
+);
 
-export default Footer
+export default Footer;

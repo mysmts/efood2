@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
+import styled from "styled-components";
+import { cores } from "../../styles";
 
 export const ProductCard = styled.div`
   width: 320px;
@@ -38,7 +38,7 @@ export const ProductCard = styled.div`
     line-height: 16px;
     cursor: pointer;
   }
-`
+`;
 
 export const Modal = styled.div`
   position: fixed;
@@ -63,7 +63,7 @@ export const Modal = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-`
+`;
 
 export const ModalContent = styled.div`
   position: relative;
@@ -120,4 +120,4 @@ export const ModalContent = styled.div`
       }
     }
   }
-`
+`;

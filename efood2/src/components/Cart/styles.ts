@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import { cores } from '../../styles'
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { cores } from "../../styles";
 
 type InputProps = {
-  maxWidth?: string
-}
+  maxWidth?: string;
+};
 
 type InputGroupProps = {
-  maxWidth?: string
-}
+  maxWidth?: string;
+};
 
 export const CartContainer = styled.div`
   position: fixed;
@@ -25,7 +25,7 @@ export const CartContainer = styled.div`
   &.is-open {
     display: flex;
   }
-`
+`;
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -33,11 +33,11 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-`
+`;
 
 export const CartMenu = styled.div`
   margin-bottom: 20px;
-`
+`;
 
 export const CartStyle = styled.aside`
   max-width: 360px;
@@ -62,14 +62,14 @@ export const CartStyle = styled.aside`
       }
     }
   }
-`
+`;
 
 export const Foto = styled.img`
   width: 80px;
   height: 80px;
   object-fit: cover;
   margin-right: 8px;
-`
+`;
 export const RemoveButton = styled.button`
   position: absolute;
   width: 16px;
@@ -77,13 +77,13 @@ export const RemoveButton = styled.button`
   right: 8px;
   bottom: 8px;
   border: none;
-`
+`;
 export const Total = styled.div`
   color: ${cores.bgColor};
   display: flex;
   justify-content: space-between;
   margin: 40px 0 16px;
-`
+`;
 export const CartButton = styled.button`
   width: 100%;
   border: none;
@@ -92,7 +92,7 @@ export const CartButton = styled.button`
   font-weight: 700;
   padding: 4px;
   margin-bottom: 8px;
-`
+`;
 export const CartButtonLink = styled(Link)`
   max-width: 100%;
   width: 100%;
@@ -103,7 +103,7 @@ export const CartButtonLink = styled(Link)`
   padding: 4px;
   margin-bottom: 8px;
   text-decoration: none;
-`
+`;
 export const DeliveryMenu = styled.div`
   h3 {
     font-size: 16px;
@@ -119,7 +119,7 @@ export const DeliveryMenu = styled.div`
       justify-content: space-between;
     }
   }
-`
+`;
 export const PaymentMenu = styled.div`
   h3 {
     font-size: 16px;
@@ -135,7 +135,7 @@ export const PaymentMenu = styled.div`
       justify-content: space-between;
     }
   }
-`
+`;
 export const ConfirmationMenu = styled.div`
   h3 {
     font-size: 16px;
@@ -146,7 +146,7 @@ export const ConfirmationMenu = styled.div`
   p {
     margin-bottom: 22px;
   }
-`
+`;
 
 export const InputGroup = styled.div<InputGroupProps>`
   font-size: 14px;
@@ -172,7 +172,7 @@ export const InputGroup = styled.div<InputGroupProps>`
       border: 2px solid red;
     }
   }
-`
+`;
 
 export const Input = styled.input<InputProps>`
   background-color: ${cores.bgFooter};
@@ -185,4 +185,4 @@ export const Input = styled.input<InputProps>`
   &.error {
     border: 2px solid red;
   }
-`
+`;

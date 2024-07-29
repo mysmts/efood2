@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const List = styled.div`
   max-width: 1024px;
@@ -8,4 +8,4 @@ export const List = styled.div`
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
   row-gap: 48px;
-`
+`;

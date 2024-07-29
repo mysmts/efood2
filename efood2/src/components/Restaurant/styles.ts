@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { cores } from '../../styles'
-import { Link } from 'react-router-dom'
+import styled from "styled-components";
+import { cores } from "../../styles";
+import { Link } from "react-router-dom";
 
 export const Card = styled.div`
   border: 1px solid ${cores.fontColor};
@@ -10,7 +10,7 @@ export const Card = styled.div`
   overflow: hidden;
   background-color: ${cores.branco};
   position: relative;
-`
+`;
 
 export const CardImage = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ export const CardImage = styled.div`
   img {
     width: 100%;
   }
-`
+`;
 
 export const CardHeader = styled.div`
   font-size: 18px;
@@ -34,7 +34,7 @@ export const CardHeader = styled.div`
       margin-right: 8px;
     }
   }
-`
+`;
 
 export const CardInfos = styled.div`
   padding: 8px;
@@ -42,7 +42,7 @@ export const CardInfos = styled.div`
   p {
     margin: 16px 0;
   }
-`
+`;
 
 export const ButtonLink = styled(Link)`
   color: ${cores.branco};
@@ -51,10 +51,10 @@ export const ButtonLink = styled(Link)`
   padding: 4px 6px;
   color: ${cores.bgFooter};
   font-weight: bold;
-`
+`;
 
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
-`
+`;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ProductListStyle = styled.div`
   max-width: 1024px;
@@ -7,4 +7,4 @@ export const ProductListStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-`
+`;

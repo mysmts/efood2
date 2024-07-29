@@ -1,13 +1,13 @@
-import estrela from '../../assets/images/estrela.svg'
-import * as S from './styles'
+import estrela from "../../assets/images/estrela.svg";
+import * as S from "./styles";
 
 type Props = {
-  titulo: string
-  avaliacao: string
-  descricao: string
-  capa: string
-  id: number
-}
+  titulo: string;
+  avaliacao: string;
+  descricao: string;
+  capa: string;
+  id: number;
+};
 
 const Restaurant = ({ titulo, avaliacao, descricao, capa, id }: Props) => (
   <S.Card>
@@ -31,6 +31,6 @@ const Restaurant = ({ titulo, avaliacao, descricao, capa, id }: Props) => (
       <S.ButtonLink to={`/profile/${id}`}>Saiba mais</S.ButtonLink>
     </S.CardInfos>
   </S.Card>
-)
+);
 
-export default Restaurant
+export default Restaurant;

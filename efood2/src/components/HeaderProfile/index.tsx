@@ -1,29 +1,29 @@
-import { Cabecalho, CabecalhoImg, HomeLink, Logo } from './styles'
+import { Cabecalho, CabecalhoImg, HomeLink, Logo } from "./styles";
 
-import bgImg from '../../assets/images/Vector.svg'
-import logo from '../../assets/images/logo.svg'
-import { Restaurante } from '../../Pages/Home'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store'
-import { open } from '../../store/reducers/cart'
+import bgImg from "../../assets/images/Vector.svg";
+import logo from "../../assets/images/logo.svg";
+import { Restaurante } from "../../Pages/Home";
+import { useDispatch, useSelector } from "react-redux";
+import { RootReducer } from "../../store";
+import { open } from "../../store/reducers/cart";
 
 type Props = {
-  restaurante: Restaurante
-}
+  restaurante: Restaurante;
+};
 
 const HeaderProfile = ({ restaurante }: Props) => {
-  const { items } = useSelector((state: RootReducer) => state.cart)
-  const dispatch = useDispatch()
+  const { items } = useSelector((state: RootReducer) => state.cart);
+  const dispatch = useDispatch();
 
   const openCart = () => {
-    dispatch(open())
-  }
+    dispatch(open());
+  };
 
   return (
     <>
       <Cabecalho style={{ backgroundImage: `url(${bgImg})` }}>
         <div>
-          <HomeLink to={'/'}>Restaurantes</HomeLink>
+          <HomeLink to={"/"}>Restaurantes</HomeLink>
           <Logo src={logo} alt="efood" />
           <p onClick={openCart}>{items.length} produto(s) no carrinho</p>
         </div>
@@ -35,7 +35,7 @@ const HeaderProfile = ({ restaurante }: Props) => {
         </div>
       </CabecalhoImg>
     </>
-  )
-}
+  );
+};
 
-export default HeaderProfile
+export default HeaderProfile;

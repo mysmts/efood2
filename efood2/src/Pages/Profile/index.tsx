@@ -1,19 +1,19 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from "react-router-dom";
 
-import { useGetRestaurantSelectedQuery } from '../../services/api'
+import { useGetRestaurantSelectedQuery } from "../../services/api";
 
-import Footer from '../../components/Footer'
-import HeaderProfile from '../../components/HeaderProfile'
-import ProductList from '../../components/ProductList'
+import Footer from "../../components/Footer";
+import HeaderProfile from "../../components/HeaderProfile";
+import ProductList from "../../components/ProductList";
 
 const Profile = () => {
-  const { id } = useParams()
+  const { id } = useParams();
 
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const { data: restaurante } = useGetRestaurantSelectedQuery(id!)
+  const { data: restaurante } = useGetRestaurantSelectedQuery(id!);
 
   if (!restaurante) {
-    return <h3>Carregando...</h3>
+    return <h3>Carregando...</h3>;
   }
 
   return (
@@ -22,7 +22,7 @@ const Profile = () => {
       <ProductList produtos={restaurante.cardapio} />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

@@ -1,10 +1,10 @@
-import { Cardapio } from '../../Pages/Home'
-import Product from '../Product'
-import { ProductListStyle } from './styles'
+import { Cardapio } from "../../Pages/Home";
+import Product from "../Product";
+import { ProductListStyle } from "./styles";
 
 type Props = {
-  produtos: Cardapio[]
-}
+  produtos: Cardapio[];
+};
 
 const ProductList = ({ produtos }: Props) => {
   return (
@@ -21,7 +21,7 @@ const ProductList = ({ produtos }: Props) => {
         />
       ))}
     </ProductListStyle>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;
