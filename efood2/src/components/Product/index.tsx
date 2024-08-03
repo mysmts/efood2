@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Modal, ModalContent, ProductCard } from "./styles";
+import { Modal, ModalContent, ProductCard } from './styles';
 
-import close from "../../assets/images/close.svg";
-import { useDispatch } from "react-redux";
-import { add, open } from "../../store/reducers/cart";
+import close from '../../assets/images/close.svg';
+import { useDispatch } from 'react-redux';
+import { add, open } from '../../store/reducers/cart';
 
 type Props = {
   id: number;
@@ -16,9 +16,9 @@ type Props = {
 };
 
 export const formataPreco = (preco = 0) => {
-  return new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
   }).format(preco);
 };
 
@@ -34,14 +34,14 @@ const Product = ({ id, nome, descricao, porcao, foto, preco }: Props) => {
 
   const showModal = () => {
     if (isVisible) {
-      return "isVisible";
+      return 'isVisible';
     }
-    return "";
+    return '';
   };
 
   const getDescription = (descricao: string) => {
     if (descricao.length > 150) {
-      return descricao.slice(0, 150) + "...";
+      return descricao.slice(0, 150) + '...';
     }
     return descricao;
   };

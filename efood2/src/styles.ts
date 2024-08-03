@@ -1,11 +1,11 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const cores = {
-  fontColor: "#E66767",
-  bgColor: "#FFF8F2",
-  branco: "#fff",
-  bgFooter: "#FFEBD9",
-  inputTxtColor: "#4B4B4B",
+  fontColor: '#E66767',
+  bgColor: '#FFF8F2',
+  branco: '#fff',
+  bgFooter: '#FFEBD9',
+  inputTxtColor: '#4B4B4B',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default GlobalStyle;
 
-export const Container = styled.div`
+export const Container = styled.div`,
   width: 100%;
   margin: 0 auto;
 `;

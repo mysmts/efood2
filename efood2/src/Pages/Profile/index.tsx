@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
-import { useGetRestaurantSelectedQuery } from "../../services/api";
+import { useGetRestaurantSelectedQuery } from '../../services/api';
 
-import Footer from "../../components/Footer";
-import HeaderProfile from "../../components/HeaderProfile";
-import ProductList from "../../components/ProductList";
+import Footer from '../../components/Footer';
+import HeaderProfile from '../../components/HeaderProfile';
+import ProductList from '../../components/ProductList';
 
 const Profile = () => {
   const { id } = useParams();

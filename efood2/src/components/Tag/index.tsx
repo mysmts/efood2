@@ -1,4 +1,4 @@
-import { TagS } from "./styles";
+import { TagS } from './styles';
 
 type Props = {
   children: string;

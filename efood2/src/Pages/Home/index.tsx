@@ -1,7 +1,7 @@
-import Footer from "../../components/Footer";
-import RestaurantList from "../../components/RestaurantList";
-import HeaderHome from "../../components/HeaderHome";
-import { useGetRestaurantsQuery } from "../../services/api";
+import Footer from '../../components/Footer';
+import RestaurantList from '../../components/RestaurantList';
+import HeaderHome from '../../components/HeaderHome';
+import { useGetRestaurantsQuery } from '../../services/api';
 
 export type Cardapio = {
   foto: string;

@@ -1,6 +1,6 @@
-import { Restaurante } from "../../Pages/Home";
-import Restaurant from "../Restaurant";
-import { List } from "./styles";
+import { Restaurante } from '../../Pages/Home';
+import Restaurant from '../Restaurant';
+import { List } from './styles';
 
 export type Props = {
   restaurantes: Restaurante[];

@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Cardapio } from "../../Pages/Home";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Cardapio } from '../../Pages/Home';
 
 type CartState = {
   items: Cardapio[];
@@ -14,7 +14,7 @@ const initialState: CartState = {
 };
 
 const cartSlice = createSlice({
-  name: "cart",
+  name: 'cart',
   initialState,
   reducers: {
     add: (state, action: PayloadAction<Cardapio>) => {

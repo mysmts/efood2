@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { cores } from "../../styles";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { cores } from '../../styles';
 
 type InputProps = {
   maxWidth?: string;

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { cores } from "../../styles";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { cores } from '../../styles';
 
 export const Cabecalho = styled.div`
   width: 100%;
@@ -50,7 +50,7 @@ export const CabecalhoImg = styled.div`
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    content: "";
+    content: '';
   }
 
   div {

@@ -1,7 +1,7 @@
-import { Header, Logo, Slogan } from "./styles";
+import { Header, Logo, Slogan } from './styles';
 
-import logo from "../../assets/images/logo.svg";
-import bgImg from "../../assets/images/Vector.svg";
+import logo from '../../assets/images/logo.svg';
+import bgImg from '../../assets/images/Vector.svg';
 
 const HeaderHome = () => (
   <Header style={{ backgroundImage: `url(${bgImg})` }}>
