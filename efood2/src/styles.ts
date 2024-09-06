@@ -1,30 +1,31 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const cores = {
-  fontColor: '#E66767',
-  bgColor: '#FFF8F2',
-  branco: '#fff',
-  bgFooter: '#FFEBD9',
-  inputTxtColor: '#4B4B4B',
+  vermelho: '#E66767',
+  rosa: '#FFEBD9',
+  branco: '#FFFFFF',
+  dourado: '#FFB930',
+  palhaClara: '#FFF8F2',
 };
 
-const GlobalStyle = createGlobalStyle`
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '821px',
+  mobile: '430px',
+  iphone11: '414px',
+};
+
+export const GlobalCSS = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    list-style: none;
   }
 
   body {
-    background-color: ${cores.bgColor};
-    color: ${cores.fontColor};
+    background-color: ${cores.palhaClara};
+    color: ${cores.vermelho};
   }
-`;
-
-export default GlobalStyle;
-
-export const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
-`;
+`; // <-- Crase de fechamento foi corrigida

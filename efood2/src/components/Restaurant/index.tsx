@@ -1,36 +1,48 @@
-import estrela from '../../assets/images/estrela.svg';
-import * as S from './styles';
+import Button from '../Button'
+import { Card, Photo, Title, Description, Rate, Categories } from './styles'
+import Star from '../../assets/estrela (1).png'
+import { reduceDescription } from '../Food'
 
 type Props = {
-  titulo: string;
-  avaliacao: string;
-  descricao: string;
-  capa: string;
-  id: number;
-};
+  RestaurantTitle: string
+  RestaurantRate: number
+  RestaurantDetails: string
+  RestaurantPhoto: string
+  RestaurantCategories: string[]
+  RestaurantToLink: string
+}
 
-const Restaurant = ({ titulo, avaliacao, descricao, capa, id }: Props) => (
-  <S.Card>
-    <S.CardImage>
-      <img src={capa} alt="Foto do restaurante" />
-    </S.CardImage>
-    <S.CardInfos>
-      <S.CardHeader>
-        <h3>{titulo}</h3>
-        <div>
-          <h3>{avaliacao}</h3>
-          <img src={estrela} alt="avaliação" />
-        </div>
-      </S.CardHeader>
-      {/* <Infos>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
-      </Infos> */}
-      <p>{descricao}</p>
-      <S.ButtonLink to={`/profile/${id}`}>Saiba mais</S.ButtonLink>
-    </S.CardInfos>
-  </S.Card>
-);
+const Restaurant = ({
+  RestaurantTitle,
+  RestaurantRate,
+  RestaurantDetails,
+  RestaurantPhoto,
+  RestaurantCategories,
+  RestaurantToLink
+}: Props) => {
+  return (
+    <Card>
+      <Photo src={RestaurantPhoto} alt="" />
+      <Categories>
+        {RestaurantCategories.map((info) => {
+          if (info) {
+            return <Button key={info}>{info}</Button>
+          }
+        })}
+      </Categories>
+      <div className="ContainerTop">
+        <Title>{RestaurantTitle}</Title>
+        <Rate>
+          <h3>{RestaurantRate}</h3>
+          <img src={Star} alt="Estrela amarela" />
+        </Rate>
+      </div>
+      <Description>{reduceDescription(RestaurantDetails)}</Description>
+      <Button type="link" to={RestaurantToLink}>
+        Saiba mais
+      </Button>
+    </Card>
+  )
+}
 
-export default Restaurant;
+export default Restaurant

@@ -1,60 +1,48 @@
-import styled from 'styled-components';
-import { cores } from '../../styles';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { breakpoints, cores } from '../../styles'
 
 export const Card = styled.div`
-  border: 1px solid ${cores.fontColor};
-  max-width: 472px;
-  width: 100%;
-  font-size: 14px;
-  overflow: hidden;
   background-color: ${cores.branco};
-  position: relative;
-`;
+  border: solid 1px ${cores.vermelho};
 
-export const CardImage = styled.div`
-  width: 100%;
-  height: 250px;
-  overflow-y: hidden;
-
-  img {
-    width: 100%;
-  }
-`;
-
-export const CardHeader = styled.div`
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-
-  div {
+  .ContainerTop {
     display: flex;
-
-    h3 {
-      margin-right: 8px;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  position: relative;
+`
+export const Photo = styled.img`
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+`
+export const Title = styled.h3`
+  font-size: 18px;
+  font-weight: bold;
+`
+export const Description = styled.p`
+  font-size: 14px;
+  font-weight: regular;
+  margin-right: 8px;
+  margin-left: 8px;
+`
+export const Rate = styled.div`
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+  img {
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
     }
   }
-`;
-
-export const CardInfos = styled.div`
-  padding: 8px;
-
-  p {
-    margin: 16px 0;
-  }
-`;
-
-export const ButtonLink = styled(Link)`
-  color: ${cores.branco};
-  background-color: ${cores.fontColor};
-  text-decoration: none;
-  padding: 4px 6px;
-  color: ${cores.bgFooter};
-  font-weight: bold;
-`;
-
-export const Infos = styled.div`
+  display: flex;
+`
+export const Categories = styled.div`
   position: absolute;
-  top: 16px;
+  top: 0;
   right: 16px;
-`;
+`

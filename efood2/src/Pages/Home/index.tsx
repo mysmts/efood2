@@ -1,46 +1,21 @@
-import Footer from '../../components/Footer';
-import RestaurantList from '../../components/RestaurantList';
-import HeaderHome from '../../components/HeaderHome';
-import { useGetRestaurantsQuery } from '../../services/api';
-
-export type Cardapio = {
-  foto: string;
-  preco: number;
-  id: number;
-  nome: string;
-  descricao: string;
-  porcao: string;
-};
-
-export type Restaurante = {
-  id: number;
-  titulo: string;
-  destacado: boolean;
-  tipo: string;
-  avaliacao: string;
-  descricao: string;
-  capa: string;
-  cardapio: Cardapio[];
-};
+import Footer from '../../components/Footer'
+import Hero from '../../components/Hero'
+import Loader from '../../components/Loader'
+import RestaurantList from '../../components/RestaurantList'
+import { useGetRestaurantsQuery } from '../../services/api'
 
 const Home = () => {
-  const { isLoading, error, data: restaurantes } = useGetRestaurantsQuery();
+  const { data: restaurants } = useGetRestaurantsQuery()
 
-  if (isLoading) {
-    return <p>Carregando...</p>;
+  if (restaurants) {
+    return (
+      <>
+        <Hero />
+        <RestaurantList restaurants={restaurants} />
+        <Footer />
+      </>
+    )
   }
-
-  if (error) {
-    return <p>Ocorreu um erro ao carregar os restaurantes.</p>;
-  }
-
-  return (
-    <>
-      <HeaderHome />
-      {restaurantes && <RestaurantList restaurantes={restaurantes} />}
-      <Footer />
-    </>
-  );
-};
-
-export default Home;
+  return <Loader />
+}
+export default Home
