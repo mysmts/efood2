@@ -1,8 +1,8 @@
-import logo from '../../assets/logo (1).png'
-import facebook from '../../assets/facebook-round-svgrepo-com 1.png'
-import instagram from '../../assets/instagram-round-svgrepo-com (1) 1.png'
-import twitter from '../../assets/twitter-2-svgrepo-com 1.png'
-import { FooterStyle, Branding, SocialMedia, Disclaimer } from './styles'
+import logo from '../../assets/logo (1).png';
+import facebook from '../../assets/facebook-round-svgrepo-com 1.png';
+import instagram from '../../assets/instagram-round-svgrepo-com (1) 1.png';
+import twitter from '../../assets/twitter-2-svgrepo-com 1.png';
+import { FooterStyle, Branding, SocialMedia, Disclaimer } from './styles';
 
 const Footer = () => (
   <FooterStyle>
@@ -18,6 +18,6 @@ const Footer = () => (
       estabelecimento contratado.
     </Disclaimer>
   </FooterStyle>
-)
+);
 
-export default Footer
+export default Footer;

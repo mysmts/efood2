@@ -4,14 +4,14 @@ import {
   DeliverContainer,
   Field,
   PaymentContainer,
-  ConfirmedContainer
+  ConfirmedContainer,
 } from './styles';
 import {
   backtoCart,
   payment,
   confirmed,
   startCheckout,
-  closeAndFinish
+  closeAndFinish,
 } from '../../store/reducers/cart';
 import { RootReducer } from '../../store';
 import { priceFormat } from '../FoodList';
@@ -86,7 +86,7 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
       cardNumber: '',
       cvv: '',
       mesVencimento: '',
-      anoVencimento: ''
+      anoVencimento: '',
     },
     validationSchema: Yup.object({
       remetente: Yup.string().required('Campo obrigatório'),
@@ -108,7 +108,7 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
       ),
       anoVencimento: Yup.string().when((values, schema) =>
         isPayment ? schema.required('O campo é obrigatório') : schema
-      )
+      ),
     }),
     onSubmit: (values) => {
       purchase({
@@ -119,8 +119,8 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
             description: values.endereco,
             number: Number(values.numero),
             zipCode: values.cep,
-            complement: values.complemento
-          }
+            complement: values.complemento,
+          },
         },
         payment: {
           card: {
@@ -129,18 +129,18 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
             code: Number(values.cvv),
             expires: {
               month: Number(values.mesVencimento),
-              year: Number(values.anoVencimento)
-            }
-          }
+              year: Number(values.anoVencimento),
+            },
+          },
         },
         products: [
           {
             id: 1,
-            price: 100
-          }
-        ]
+            price: 100,
+          },
+        ],
       });
-    }
+    },
   });
 
   const getErroMassage = (campo: string, message?: string) => {
@@ -239,15 +239,11 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
           <AddCartButton type="submit" onClick={activePayment}>
             Continuar com o pagamento
           </AddCartButton>
-          <AddCartButton onClick={backCart}>
-            Voltar ao carrinho
-          </AddCartButton>
+          <AddCartButton onClick={backCart}>Voltar ao carrinho</AddCartButton>
         </div>
       </DeliverContainer>
       <PaymentContainer className={isPayment ? 'show' : ''}>
-        <p>
-          Pagamento - Valor a pagar {priceFormat(priceTotal)}
-        </p>
+        <p>Pagamento - Valor a pagar {priceFormat(priceTotal)}</p>
         <Field>
           <label htmlFor="cardName">Nome do cartão</label>
           <input
@@ -274,7 +270,9 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
               onBlur={form.handleBlur}
               value={form.values.cardNumber}
             />
-            <small>{getErroMassage('cardNumber', form.errors.cardNumber)}</small>
+            <small>
+              {getErroMassage('cardNumber', form.errors.cardNumber)}
+            </small>
           </Field>
           <Field>
             <label htmlFor="cvv">CVV</label>
@@ -304,7 +302,9 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
               onBlur={form.handleBlur}
               value={form.values.mesVencimento}
             />
-            <small>{getErroMassage('mesVencimento', form.errors.mesVencimento)}</small>
+            <small>
+              {getErroMassage('mesVencimento', form.errors.mesVencimento)}
+            </small>
           </Field>
           <Field>
             <label htmlFor="anoVencimento">Ano de vencimento</label>
@@ -318,7 +318,9 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
               onBlur={form.handleBlur}
               value={form.values.anoVencimento}
             />
-            <small>{getErroMassage('anoVencimento', form.errors.anoVencimento)}</small>
+            <small>
+              {getErroMassage('anoVencimento', form.errors.anoVencimento)}
+            </small>
           </Field>
         </div>
         <div className="buttomContainer">
@@ -339,6 +341,7 @@ const Checkout = ({ checkoutStart = false, priceTotal = 0 }: Props) => {
         <div className="buttomContainer">
           <AddCartButton onClick={finish}>Voltar ao início</AddCartButton>
         </div>
+        {isSuccess && <p>Compra realizada com sucesso!</p>}
       </ConfirmedContainer>
     </form>
   );

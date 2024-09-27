@@ -18,18 +18,18 @@ export const DeliverContainer = styled.div`
   }
 
   color: ${cores.rosa};
-  
+
   h2 {
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 16px;
   }
-  
+
   label {
     font-weight: 700;
     font-size: 14px;
   }
-  
+
   ${AddCartButton} {
     margin-top: 8px;
   }
@@ -38,7 +38,7 @@ export const DeliverContainer = styled.div`
 export const Field = styled.div`
   display: block;
   width: 100%;
-  
+
   input {
     width: 100%;
     padding: 8px;
@@ -53,49 +53,49 @@ export const PaymentContainer = styled.div`
     font-size: 16px;
     font-weight: 700;
   }
-  
+
   label {
     font-weight: 700;
     font-size: 14px;
   }
-  
+
   color: ${cores.rosa};
   display: none;
-  
+
   &.show {
     display: block;
   }
-  
+
   .buttomContainer {
     margin-top: 24px;
-    
+
     ${SubmitCartButton} {
       margin-bottom: 8px;
     }
   }
-  
+
   .fieldContainer {
     display: flex;
     column-gap: 34px;
-    
+
     #cardNumber {
       width: 228px;
     }
-    
+
     #mesVencimento {
       width: 155px;
     }
   }
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     .fieldContainer {
       display: block;
       column-gap: 34px;
-      
+
       #cardNumber {
         width: 100%;
       }
-      
+
       #mesVencimento {
         width: 100%;
       }
@@ -106,21 +106,21 @@ export const PaymentContainer = styled.div`
 export const ConfirmedContainer = styled.div`
   color: ${cores.rosa};
   display: none;
-  
+
   &.show {
     display: block;
   }
-  
+
   .buttomContainer {
     margin-top: 24px;
   }
-  
+
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
   }
-  
+
   h2 {
     font-size: 16px;
     font-weight: 700;

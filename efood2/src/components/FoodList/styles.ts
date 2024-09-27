@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { breakpoints, cores } from '../../styles'
+import styled from 'styled-components';
+import { breakpoints, cores } from '../../styles';
 
 export const Container = styled.div`
   max-width: 1024px;
@@ -12,7 +12,8 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.desktop}) {
     margin: 20px 10px;
   }
-`
+`;
+
 export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,7 +30,7 @@ export const List = styled.ul`
     margin: 0 10px;
     row-gap: 10px;
   }
-`
+`;
 
 export const Modal = styled.div`
   position: fixed;
@@ -39,7 +40,7 @@ export const Modal = styled.div`
   height: 100%;
   display: none;
   align-items: center;
-  justiry-content: center;
+  justify-content: center;
   z-index: 2;
 
   &.visible {
@@ -54,7 +55,7 @@ export const Modal = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
-`
+`;
 
 export const ModalContent = styled.div`
   margin: 0 auto;
@@ -68,7 +69,8 @@ export const ModalContent = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     padding: 15px;
   }
-`
+`;
+
 export const FoodImage = styled.img`
   object-fit: cover;
   max-width: 280px;
@@ -79,12 +81,13 @@ export const FoodImage = styled.img`
   @media (max-width: ${breakpoints.mobile}) {
     display: none;
   }
-`
+`;
+
 export const ModalContainer = styled.div`
   max-width: 656px;
   width: 100%;
   margin-top: 32px;
-`
+`;
 
 export const FoodTitle = styled.h3`
   font-size: 18px;
@@ -92,7 +95,8 @@ export const FoodTitle = styled.h3`
   color: ${cores.branco};
   line-height: 21.09px;
   display: block;
-`
+`;
+
 export const FoodDescription = styled.p`
   font-size: 14px;
   font-weight: 400;
@@ -100,17 +104,20 @@ export const FoodDescription = styled.p`
   line-height: 22px;
   width: 100%;
   margin: 16px 0 16px 0;
+
   p {
     margin-top: 16px;
   }
-`
+`;
+
 export const CloseIcon = styled.img`
   max-width: 16px;
   max-height: 16px;
   width: 100%;
   margin: 8px;
   cursor: pointer;
-`
+`;
+
 export const AddCartButton = styled.button`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
@@ -121,4 +128,4 @@ export const AddCartButton = styled.button`
   text-align: center;
   font-size: 14px;
   cursor: pointer;
-`
+`;
