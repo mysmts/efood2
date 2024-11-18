@@ -1,6 +1,6 @@
-import { PacmanLoader } from 'react-spinners'
-import { Container } from './styles'
-import { cores } from '../../styles'
+import { PacmanLoader } from 'react-spinners';
+import { Container } from './styles';
+import { cores } from '../../styles';
 
 const Loader = () => {
   return (
@@ -9,7 +9,7 @@ const Loader = () => {
         <PacmanLoader color={cores.vermelho} />
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;

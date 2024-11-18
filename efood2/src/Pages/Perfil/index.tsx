@@ -1,30 +1,32 @@
-import { useParams } from 'react-router-dom'
-import Header from '../../components/Header'
-import Apresentacao from '../../components/Apresentacao'
-import FoodList from '../../components/FoodList'
-import Footer from '../../components/Footer'
-import { useGetRestaurantSelectedQuery } from '../../services/api'
-import Cart from '../../components/Cart'
-import Loader from '../../components/Loader'
+import { useParams } from 'react-router-dom';
+import Header from '../../components/Header';
+import Apresentacao from '../../components/Apresentacao';
+import FoodList from '../../components/FoodList';
+import Footer from '../../components/Footer';
+import { useGetRestaurantSelectedQuery } from '../../services/api';
+import Cart from '../../components/Cart';
+import Loader from '../../components/Loader';
 
-// Define RestaurantParams como um Record para satisfazer as restrições de useParams
+// Define RestaurantParams como um tipo com id do restaurante
 type RestaurantParams = {
-  id: string
-}
+  id: string;
+};
 
 const Perfil = () => {
-  // useParams retorna um objeto de parâmetros da rota
-  const { id } = useParams<RestaurantParams>()
+  // Recupera o parâmetro de rota (id)
+  const { id } = useParams<RestaurantParams>();
 
-  // Verificamos se o ID existe antes de fazer a requisição
-  const { data: restaurantFood, isLoading } = useGetRestaurantSelectedQuery(id || '')
+  // Faz a requisição de dados usando a API
+  const { data: restaurantFood, isLoading } = useGetRestaurantSelectedQuery(
+    id || ''
+  );
 
-  // Exibe o loader enquanto a requisição está em andamento
+  // Exibe o loader enquanto os dados estão carregando
   if (isLoading) {
-    return <Loader />
+    return <Loader />;
   }
 
-  // Verifica se os dados do restaurante foram carregados antes de renderizar os componentes
+  // Verifica se os dados do restaurante foram carregados
   if (restaurantFood) {
     return (
       <>
@@ -36,17 +38,17 @@ const Perfil = () => {
             id: 0,
             nome: '',
             foto: '',
-            preco: 0
+            preco: 0,
           }}
         />
         <Footer />
         <Cart />
       </>
-    )
+    );
   }
 
-  // Retorna um componente de erro ou uma mensagem se o restaurante não for encontrado
-  return <div>Restaurante não encontrado</div>
-}
+  // Mensagem caso o restaurante não seja encontrado
+  return <div>Restaurante não encontrado</div>;
+};
 
-export default Perfil
+export default Perfil;

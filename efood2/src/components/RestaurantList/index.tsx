@@ -1,18 +1,18 @@
-import Product from '../Restaurant'
-import { Container, List } from './styles'
-import { useState } from 'react'
-import Loader from '../Loader'
+import Product from '../Restaurant';
+import { Container, List } from './styles';
+import { useState } from 'react';
+import Loader from '../Loader';
 
 export type Props = {
-  restaurants: Restaurant[]
-  isLoading?: boolean
-}
+  restaurants: Restaurant[];
+  isLoading?: boolean;
+};
 
 const ProductList = ({ restaurants, isLoading }: Props) => {
-  const [destaque] = useState('Destaque da semana')
+  const [destaque] = useState('Destaque da semana');
 
   if (isLoading) {
-    return <Loader />
+    return <Loader />;
   }
   return (
     <Container>
@@ -26,14 +26,14 @@ const ProductList = ({ restaurants, isLoading }: Props) => {
             RestaurantPhoto={restaurants.capa}
             RestaurantCategories={[
               restaurants.tipo,
-              restaurants.destacado ? destaque : ''
+              restaurants.destacado ? destaque : '',
             ]}
             RestaurantToLink={`/restaurant/${restaurants.id}`}
           />
         ))}
       </List>
     </Container>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;

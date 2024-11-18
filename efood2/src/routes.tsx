@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home'
-import Perfil from './pages/Perfil'
+import Home from './pages/Home';
+import Perfil from './pages/Perfil';
 
 const Rotas = () => (
   <Routes>
@@ -9,6 +9,6 @@ const Rotas = () => (
     <Route path="/perfil" element={<Perfil />} />
     <Route path="/restaurant/:id" element={<Perfil />} />
   </Routes>
-)
+);
 
-export default Rotas
+export default Rotas;

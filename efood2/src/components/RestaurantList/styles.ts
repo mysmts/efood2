@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { breakpoints } from '../../styles'
+import styled from 'styled-components';
+import { breakpoints } from '../../styles';
 
 export const Container = styled.div`
   max-width: 1024px;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.desktop}) {
     margin: 20px 10px;
   }
-`
+`;
 
 export const List = styled.ul`
   display: grid;
@@ -26,4 +26,4 @@ export const List = styled.ul`
     margin: 0 10px;
     row-gap: 10px;
   }
-`
+`;
